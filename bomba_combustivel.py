@@ -12,8 +12,6 @@ class Bomba_combustivel:
 		self.__valor_litro = valor_litro
 		self.__quantidade_combustivel = quantidade
 
-
-
 	
 		
 	def abastecer_por_valor(self, valor):
