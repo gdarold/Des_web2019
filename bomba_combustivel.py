@@ -6,6 +6,7 @@ class Bomba_combustivel:
 	__tipo_combustivel = None
 	__valor_litro = None
 	__quantidade_combustivel = None
+	
 
 	def __init__(self, combustivel, valor_litro, quantidade):
 		self.__tipo_combustivel = combustivel
@@ -36,13 +37,19 @@ class Bomba_combustivel:
 
 	def alterar_valor(self, valor):
 		self.__valor_litro = valor
+		print("Valor combustivel alterado")
 
 	def alterar_tipo_combustivel(self, tipo):
 		self.__tipo_combustivel = tipo
+		print("Tipo de combustivel alterado")
 
 	def alterar_quantidade_combustivel_bomba(self, valor):
 		self.__quantidade_combustivel = self.__quantidade_combustivel +valor
+		print("Total combustivel na bomba", self.__quantidade_combustivel)
 
 
 		
+	def imprimir_status_bomba(self):
+		print("Tipo combustivel: ", self.__tipo_combustivel, "Valor por litro ", self.__valor_litro, "Total litros bomba ", self.__quantidade_combustivel)
 
+		
