@@ -25,7 +25,7 @@ class Bomba_combustivel:
 			print("Formam abastecidos ",self.__quantidade_combustivel, " lts")
 
 
-	def abastecer_por_valor(self, litros):
+	def abastecer_por_litro(self, litros):
 		if(self.__quantidade_combustivel>litros):
 
 			self.valor_total = litros*self.__valor_litro
@@ -52,4 +52,4 @@ class Bomba_combustivel:
 	def imprimir_status_bomba(self):
 		print("Tipo combustivel: ", self.__tipo_combustivel, "Valor por litro ", self.__valor_litro, "Total litros bomba ", self.__quantidade_combustivel)
 
-		
+
