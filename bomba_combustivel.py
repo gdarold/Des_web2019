@@ -6,7 +6,6 @@ class Bomba_combustivel:
 	__tipo_combustivel = None
 	__valor_litro = None
 	__quantidade_combustivel = None
-	__litros_abastecidos = None
 
 	def __init__(self, combustivel, valor_litro, quantidade):
 		self.__tipo_combustivel = combustivel
